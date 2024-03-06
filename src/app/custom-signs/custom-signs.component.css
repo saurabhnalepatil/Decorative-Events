@@ -1,0 +1,20 @@
+h1 {
+    font-size: 70px;
+    color: #77A28B;
+}
+
+h3 {
+    color: #626262;
+}
+
+.heart {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+}
+
+.line {
+    width: 25%;
+    height: 2px;
+    object-fit: cover;
+}

@@ -1,0 +1,68 @@
+
+h1 {
+    font-size: 70px;
+    color: #77A28B;
+}
+
+h3 {
+    color: #626262;
+}
+
+.heart {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+}
+
+.line {
+    width: 25%;
+    height: 2px;
+    object-fit: cover;
+}
+
+.left-card{
+    background-color:#77A28B; 
+    color: #ffffff;
+    height: 100%;
+}
+
+.left-card h1{
+    color: #ffffff !important;
+}
+
+::placeholder {
+    color: #000;
+    opacity: 1;
+    letter-spacing: 1px;
+}
+
+.contact-us-button {
+    width: 50%;
+    height: 45px;
+    border: 2px solid #77A28B;
+    border-radius: 5px;
+    transition: all 0.3s;
+    cursor: pointer;
+    background: white;
+    font-size: 1.2em;
+    font-weight: 550;
+    font-family: 'Mulish', sans-serif;
+    color: #77A28B;
+}
+
+.contact-us-button:hover {
+    background: #77A28B;
+    color: #F7F8FA !important;
+    font-size: 1.2em;
+}
+
+.right-card input{
+    border: none;
+    border-bottom: 2px solid #77A28B;
+   
+}
+
+.card{
+    min-height: 700px;
+    height: 700px;
+}

@@ -1,0 +1,10 @@
+.gallary img{
+    width: 100%;
+    content: cover;
+}
+
+#instagram{
+    width: 30%;
+    height: 10vh;
+    content: cover;
+}

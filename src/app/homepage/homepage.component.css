@@ -1,0 +1,253 @@
+h1 {
+    font-size: 70px;
+    color: #77A28B;
+}
+
+h3 {
+    color: #626262;
+}
+
+.event-celebration p {
+    color: #626262;
+    line-height: 30px;
+}
+
+.master-banner {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: 68vh;
+    position: relative;
+}
+
+.master-banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.master-banner .row {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    color: #77A28B;
+}
+
+.banner-text {
+    margin-left: 300px;
+    margin-top: 90px;
+}
+
+.master-banner h1 {
+    font-size: 70px;
+}
+
+.master-banner h3 {
+    color: #626262;
+}
+
+.master-banner button {
+    background-color: #77A28B;
+    width: 221px;
+    height: 53px;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 'mulish';
+    font-size: 18px;
+}
+.event-celebration button {
+    background-color: #77A28B;
+    width: 221px;
+    height: 53px;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 'mulish';
+    font-size: 18px;
+}
+
+#banner-2 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.heart {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+}
+
+.line {
+    width: 25%;
+    height: 2px;
+    object-fit: cover;
+}
+
+.Clients-feedback i {
+    color: #FFD43B;
+}
+
+
+
+.ContactUs input,
+.ContactUs textarea {
+    background-color: #77A28B;
+    color: #ffffff;
+}
+
+.ContactUs button {
+    border: 1px solid#77A28B;
+    color: #77A28B;
+}
+
+::placeholder {
+    color:#F7F8FA;
+    opacity: 1;
+    letter-spacing: 1px;
+}
+
+.contact-us-button {
+    width: 100%;
+    height: 50px;
+    border: 3px solid #77A28B;
+    border-radius: 5px;
+    transition: all 0.3s;
+    cursor: pointer;
+    background: white;
+    font-size: 1.2em;
+    font-weight: 550;
+    font-family: 'Mulish', sans-serif;
+    color: #77A28B;
+}
+
+.contact-us-button:hover {
+    background: #77A28B;
+    color: #F7F8FA !important;
+    font-size: 1.2em;
+}
+
+/* ///////////////////////////////////////////////// */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    overflow: hidden;
+}
+
+
+
+label {
+    background: #444;
+    color: #fff;
+    transition: transform 400ms ease-out;
+    display: inline-block;
+    min-height: 100%;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    line-height: 100vh;
+}
+
+form {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    white-space: nowrap;
+}
+
+input {
+    position: absolute;
+}
+
+.keys {
+    position: fixed;
+    z-index: 10;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1rem;
+    color: #fff;
+    text-align: center;
+    transition: all 300ms linear;
+    opacity: 0;
+}
+
+input:focus~.keys {
+    opacity: 0.8;
+}
+
+input:nth-of-type(1):checked~label:nth-of-type(1),
+input:nth-of-type(2):checked~label:nth-of-type(2),
+input:nth-of-type(3):checked~label:nth-of-type(3),
+input:nth-of-type(4):checked~label:nth-of-type(4) {
+    z-index: 0;
+}
+
+input:nth-of-type(1):checked~label {
+    transform: translate3d(0, 0, 0);
+}
+
+input:nth-of-type(2):checked~label {
+    transform: translate3d(-100%, 0, 0);
+}
+
+input:nth-of-type(3):checked~label {
+    transform: translate3d(-200%, 0, 0);
+}
+
+input:nth-of-type(4):checked~label {
+    transform: translate3d(-300%, 0, 0);
+}
+
+label {
+    background: #444;
+    background-size: cover;
+    font-size: 3rem;
+}
+
+label[for="diamonds"],
+label[for="hearts"] {
+    background: #cc0000;
+}
+
+label:before,
+label:after {
+    color: white;
+    display: block;
+    background: rgba(255, 255, 255, 0.2);
+    position: absolute;
+    padding: 1rem;
+    font-size: 3rem;
+    height: 10rem;
+    vertical-align: middle;
+    line-height: 10rem;
+    top: 50%;
+    transform: translate3d(0, -50%, 0);
+    cursor: pointer;
+}
+
+label:before {
+    content: "\276D";
+    right: 100%;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+}
+
+label:after {
+    content: "\276C";
+    left: 100%;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+}

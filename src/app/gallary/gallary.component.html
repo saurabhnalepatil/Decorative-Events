@@ -1,0 +1,14 @@
+<section >
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+                <img src="assets/images/instagram.png" id="instagram">
+            </div>
+        </div>
+        <div class="row gallary">
+            <div *ngFor="let image of images" class="col-sm-6 col-md-3 col-lg-4 my-3">
+                <img [src]="image" alt="">
+            </div>
+        </div>
+    </div>
+</section>
