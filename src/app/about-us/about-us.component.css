@@ -35,7 +35,16 @@ h3 {
     color: #FFD43B;
 }
 
-
+.about-us button {
+    background-color: #77A28B;
+    width: 221px;
+    height: 53px;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 'mulish';
+    font-size: 18px;
+}
 
 .ContactUs input,
 .ContactUs textarea {

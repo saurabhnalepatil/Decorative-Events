@@ -24,12 +24,23 @@ h3 {
     object-fit: cover;
 }
 
-.slide-img {
-    width: 100%;
-    object-fit: cover;
+.container button {
+    background-color: #77A28B;
+    width: 221px;
+    height: 53px;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 'mulish';
+    font-size: 18px;
 }
 
-.grid-img{
-    width: 100%;
-    object-fit: cover;
+@media (min-width: 320px) and (max-width: 425.98px) {
+    h1 {
+        font-size: 45px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
 }

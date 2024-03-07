@@ -13,10 +13,10 @@ const routes: Routes = [
   { path: '', component: HomepageComponent },
   { path: 'about-us', component: AboutUsComponent },
   { path: 'backdrops', component: BackdropsComponent },
-  { path: 'ballon-decoration', component: BallonDecorationComponent },
+  { path: 'balloon-deco', component: BallonDecorationComponent },
   { path: 'contact-us', component: ContactUsComponent },
   { path: 'event-idea', component: EventIdeaComponent },
-  { path: 'gallary', component: GallaryComponent },
+  { path: 'gallery', component: GallaryComponent },
   { path: 'rental-decor', component: RentalDecorComponent }
 ];
 

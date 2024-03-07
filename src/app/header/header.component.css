@@ -1,5 +1,5 @@
 .navbar-item {
-    color: #4d4c4c;
+    color: #77A28B;
     padding-inline: 1rem;
     font-weight: 500;
     font-size: 1.5rem;
@@ -13,4 +13,8 @@
 
 .company-name {
     margin-left: 10px;
+}
+
+.navbar a{
+  color: #626262;;
 }

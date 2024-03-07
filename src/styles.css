@@ -13,7 +13,6 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-h1,
 h2,
 h4,
 h5,
@@ -23,4 +22,12 @@ h6 {
 
 h3{
     font-family: 'Mulish';
+    color: #626262;
 }
+
+h1 {
+    font-family: 'Playball';
+    font-size: 70px;
+    color: #77A28B;
+}
+

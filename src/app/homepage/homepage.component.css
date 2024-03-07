@@ -1,10 +1,7 @@
-h1 {
-    font-size: 70px;
-    color: #77A28B;
-}
-
-h3 {
-    color: #626262;
+.slider,
+.master-bg,
+.event-celebration {
+    overflow-x: hidden;
 }
 
 .event-celebration p {
@@ -12,28 +9,22 @@ h3 {
     line-height: 30px;
 }
 
-.master-banner {
+.master-bg {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     width: 100%;
     height: 68vh;
     position: relative;
+    overflow: hidden;
 }
 
-.master-banner img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.master-banner .row {
+.master-bg .row {
     position: absolute;
     top: 50%;
     left: 0;
     right: 0;
     transform: translateY(-50%);
-    color: #77A28B;
 }
 
 .banner-text {
@@ -41,24 +32,14 @@ h3 {
     margin-top: 90px;
 }
 
-.master-banner h1 {
+.master-bg h1 {
     font-size: 70px;
 }
 
-.master-banner h3 {
+.master-bg h3 {
     color: #626262;
 }
 
-.master-banner button {
-    background-color: #77A28B;
-    width: 221px;
-    height: 53px;
-    border: none;
-    border-radius: 5px;
-    color: #ffffff;
-    font-size: 'mulish';
-    font-size: 18px;
-}
 .event-celebration button {
     background-color: #77A28B;
     width: 221px;
@@ -106,7 +87,7 @@ h3 {
 }
 
 ::placeholder {
-    color:#F7F8FA;
+    color: #F7F8FA;
     opacity: 1;
     letter-spacing: 1px;
 }
@@ -131,123 +112,301 @@ h3 {
     font-size: 1.2em;
 }
 
+@media (min-width: 320px) and (max-width: 425.98px) {
+    h1 {
+        font-size: 45px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    .event-celebration button {
+        width: 221px;
+        height: 53px;
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {}
+
+@media (min-width: 768px) and (max-width: 991.98px) {}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ///////////////////////////////////////////////// */
 
-* {
-    box-sizing: border-box;
+.slider {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 800px
 }
 
-body {
-    font-family: sans-serif;
-    overflow: hidden;
-}
+/* Basic appearance stuff ends here */
 
-
-
-label {
-    background: #444;
-    color: #fff;
-    transition: transform 400ms ease-out;
-    display: inline-block;
-    min-height: 100%;
-    width: 100vw;
-    height: 100vh;
-    position: relative;
-    z-index: 1;
-    text-align: center;
-    line-height: 100vh;
-}
-
-form {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    white-space: nowrap;
-}
-
-input {
-    position: absolute;
-}
-
-.keys {
-    position: fixed;
-    z-index: 10;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding: 1rem;
-    color: #fff;
-    text-align: center;
-    transition: all 300ms linear;
-    opacity: 0;
-}
-
-input:focus~.keys {
-    opacity: 0.8;
-}
-
-input:nth-of-type(1):checked~label:nth-of-type(1),
-input:nth-of-type(2):checked~label:nth-of-type(2),
-input:nth-of-type(3):checked~label:nth-of-type(3),
-input:nth-of-type(4):checked~label:nth-of-type(4) {
-    z-index: 0;
-}
-
-input:nth-of-type(1):checked~label {
-    transform: translate3d(0, 0, 0);
-}
-
-input:nth-of-type(2):checked~label {
-    transform: translate3d(-100%, 0, 0);
-}
-
-input:nth-of-type(3):checked~label {
-    transform: translate3d(-200%, 0, 0);
-}
-
-input:nth-of-type(4):checked~label {
-    transform: translate3d(-300%, 0, 0);
-}
-
-label {
-    background: #444;
-    background-size: cover;
-    font-size: 3rem;
-}
-
-label[for="diamonds"],
-label[for="hearts"] {
-    background: #cc0000;
-}
-
-label:before,
-label:after {
-    color: white;
+/* Parallax Horizontal Scroller - by Bree Dulmage, 2020 */
+#proparallax {
     display: block;
-    background: rgba(255, 255, 255, 0.2);
+    position: relative;
+    overflow: hidden;
+    min-height: 37.5rem;
+    width: 100%;
+}
+
+#proparallax img {
     position: absolute;
-    padding: 1rem;
-    font-size: 3rem;
-    height: 10rem;
-    vertical-align: middle;
-    line-height: 10rem;
-    top: 50%;
-    transform: translate3d(0, -50%, 0);
-    cursor: pointer;
+    width: 100vw;
+    /* Changed from 50rem to 100vw */
+    height: calc(37.5rem * (100vw / 50rem));
+    /* Maintain aspect ratio */
+    overflow: hidden;
+    object-fit: cover;
+    width: 100;
 }
 
-label:before {
-    content: "\276D";
-    right: 100%;
-    border-top-left-radius: 50%;
-    border-bottom-left-radius: 50%;
+@keyframes parallax_one {
+
+    /* controls img.one movement */
+    0% {
+        /* .imageloaded */
+        height: calc(37.5rem * (100vw / 50rem));
+        /* Maintain aspect ratio */
+        width: 100vw;
+        /* Changed from 50rem to 100vw */
+        left: 0rem;
+        opacity: 1;
+    }
+
+    /* .imagehold runs from 0 to 27.77% */
+    27.77% {
+        /* .imageloaded */
+        width: 100vw;
+        /* Changed from 50rem to 100vw */
+        left: 0rem;
+    }
+
+    27.78% {
+        /* .imagepreunload */
+        width: 100vw;
+        /* Changed from 50rem to 100vw */
+        left: 0rem;
+        right: 100vw;
+        /* Adjusted to match width change */
+    }
+
+    33.33% {
+        /* .imageunloaded */
+        height: calc(37.5rem * (100vw / 50rem));
+        /* Maintain aspect ratio */
+        width: 0rem;
+        left: 0rem;
+        right: 0rem;
+        opacity: 1;
+    }
+
+    33.34% {
+        /* imageoff */
+        opacity: 0;
+    }
+
+    94.43% {
+        /* .imageon */
+        left: 0rem;
+        opacity: 0;
+    }
+
+    94.44% {
+        /* .imageinitial */
+        height: calc(37.5rem * (100vw / 50rem));
+        /* Maintain aspect ratio */
+        width: 0rem;
+        left: 100vw;
+        /* Adjusted to match width change */
+        opacity: 1;
+    }
+
+    100% {
+        /* .imageloaded */
+        width: 100vw;
+        /* Changed from 50rem to 100vw */
+        left: 0rem;
+        opacity: 1;
+    }
 }
 
-label:after {
-    content: "\276C";
-    left: 100%;
-    border-top-right-radius: 50%;
-    border-bottom-right-radius: 50%;
+@keyframes parallax_two {
+
+    /* controls img.two movement */
+    0% {
+        /* .imageoff */
+        opacity: 0;
+    }
+
+    27.77% {
+        /* .imageon */
+        left: 0rem;
+        opacity: 0;
+    }
+
+    27.78% {
+        /* .imageinitial */
+        width: 0rem;
+        height: calc(37.5rem * (100vw / 50rem));
+        /* Maintain aspect ratio */
+        left: 100vw;
+        /* Changed from 50rem to 100vw */
+        opacity: 1;
+    }
+
+    33.33% {
+        /* .imageloaded */
+        width: 100vw;
+        /* Changed from 50rem to 100vw */
+        left: 0rem;
+    }
+
+    /* .imagehold runs from 33.34% - 61.10% */
+    61.10% {
+        /* .imageloaded */
+        width: 100vw;
+        /* Changed from 50rem to 100vw */
+        left: 0rem;
+    }
+
+    61.11% {
+        /* .imagepreunload */
+        width: 100vw;
+        /* Changed from 50rem to 100vw */
+        left: 0rem;
+        right: 100vw;
+        /* Adjusted to match width change */
+    }
+
+    66.67% {
+        /* .imageunloaded */
+        width: 0rem;
+        right: 0rem;
+        left: 0rem;
+        height: calc(37.5rem * (100vw / 50rem));
+        /* Maintain aspect ratio */
+        opacity: 1;
+    }
+
+    66.68% {
+        /* .imageoff */
+        opacity: 0;
+    }
+
+    100% {
+        /* .imageoff */
+        opacity: 0;
+    }
+}
+
+@keyframes parallax_three {
+
+    /* controls img.three movement */
+    0% {
+        /* .imageoff */
+        opacity: 0;
+    }
+
+    61.10% {
+        /* .imageon */
+        opacity: 0;
+    }
+
+    61.11% {
+        /* .imageinitial */
+        width: 0rem;
+        height: calc(37.5rem * (100vw / 50rem));
+        /* Maintain aspect ratio */
+        left: 100vw;
+        /* Changed from 50rem to 100vw */
+        opacity: 1;
+    }
+
+    66.67% {
+        /* .imageloaded */
+        width: 100vw;
+        /* Changed from 50rem to 100vw */
+        left: 0rem;
+    }
+
+    /* .imagehold runs from 66.67% - 94.43% */
+    94.43% {
+        /* .imageloaded */
+        width: 100vw;
+        /* Changed from 50rem to 100vw */
+        left: 0rem;
+    }
+
+    94.44% {
+        /* .imagepreunload */
+        width: 100vw;
+        /* Changed from 50rem to 100vw */
+        left: 0rem;
+        right: 100vw;
+        /* Adjusted to match width change */
+    }
+
+    100% {
+        /* imageunloaded */
+        width: 0rem;
+        right: 0rem;
+        left: 0rem;
+        height: calc(37.5rem * (100vw / 50rem));
+        /* Maintain aspect ratio */
+        opacity: 1;
+    }
+}
+
+#proparallax img.one {
+    animation-name: parallax_one;
+    /* controls img.one movement */
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 18s;
+    animation-direction: forwards;
+    object-fit: cover;
+}
+
+#proparallax img.two {
+    animation-name: parallax_two;
+    /* controls img.two movement */
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 18s;
+    animation-direction: forwards;
+    object-fit: cover;
+}
+
+#proparallax img.three {
+    animation-name: parallax_three;
+    /* controls img.three movement */
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 18s;
+    animation-direction: forwards;
+    object-fit: cover;
 }
