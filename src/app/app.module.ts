@@ -14,6 +14,8 @@ import { BackdropsComponent } from './backdrops/backdrops.component';
 import { CustomSignsComponent } from './custom-signs/custom-signs.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+import { ProductsComponent } from './products/products.component';
+import { ServicesComponent } from './services/services.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,9 @@ import { FooterComponent } from './footer/footer.component';
     BackdropsComponent,
     CustomSignsComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    ProductsComponent,
+    ServicesComponent,
   ],
   imports: [
     BrowserModule,

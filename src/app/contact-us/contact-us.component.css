@@ -1,32 +1,14 @@
-
-h1 {
-    font-size: 70px;
-    color: #77A28B;
+.card {
+    border: 2px solid #77A28B;
 }
 
-h3 {
-    color: #626262;
-}
-
-.heart {
-    width: 30px;
-    height: 30px;
-    object-fit: cover;
-}
-
-.line {
-    width: 25%;
-    height: 2px;
-    object-fit: cover;
-}
-
-.left-card{
-    background-color:#77A28B; 
+.left-card {
+    background-color: #77A28B;
     color: #ffffff;
     height: 100%;
 }
 
-.left-card h1{
+.left-card h1 {
     color: #ffffff !important;
 }
 
@@ -34,6 +16,10 @@ h3 {
     color: #000;
     opacity: 1;
     letter-spacing: 1px;
+}
+
+.right-card {
+    height: 100;
 }
 
 .contact-us-button {
@@ -56,13 +42,27 @@ h3 {
     font-size: 1.2em;
 }
 
-.right-card input{
+.right-card input {
     border: none;
     border-bottom: 2px solid #77A28B;
-   
+
 }
 
-.card{
-    min-height: 700px;
-    height: 700px;
+.parent {
+    margin-top: -137px;
 }
+
+
+
+.map {
+    height: calc(100% - 145px);
+}
+
+@media only screen and (max-width: 639px) {
+    .map {
+        height: calc(100% - 285px);
+    }
+
+    
+}
+

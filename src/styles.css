@@ -31,3 +31,14 @@ h1 {
     color: #77A28B;
 }
 
+.heart {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+}
+
+.line {
+    width: 25%;
+    height: 2px;
+    object-fit: cover;
+}
