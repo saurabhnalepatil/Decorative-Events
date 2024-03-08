@@ -10,6 +10,7 @@ import { GallaryComponent } from './gallary/gallary.component';
 import { RentalDecorComponent } from './rental-decor/rental-decor.component';
 import { ProductsComponent } from './products/products.component';
 import { ServicesComponent } from './services/services.component';
+import { SliderComponent } from './slider/slider.component';
 
 const routes: Routes = [
   { path: '', component: HomepageComponent },
@@ -21,7 +22,8 @@ const routes: Routes = [
   { path: 'gallery', component: GallaryComponent },
   { path: 'rental-decor', component: RentalDecorComponent },
   { path: 'products', component: ProductsComponent },
-  {path: 'services', component: ServicesComponent}
+  { path: 'services', component: ServicesComponent },
+  { path: 'slider', component: SliderComponent }
 ];
 
 @NgModule({

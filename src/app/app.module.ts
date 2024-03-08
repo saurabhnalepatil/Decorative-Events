@@ -16,7 +16,7 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { ProductsComponent } from './products/products.component';
 import { ServicesComponent } from './services/services.component';
-
+import { SliderComponent } from './slider/slider.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,6 +33,8 @@ import { ServicesComponent } from './services/services.component';
     FooterComponent,
     ProductsComponent,
     ServicesComponent,
+    SliderComponent,
+    
   ],
   imports: [
     BrowserModule,
