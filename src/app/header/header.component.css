@@ -6,6 +6,13 @@
     filter: drop-shadow(0 5px 4px rgba(0, 0, 0, 0.4));
 }
 
+.logo-img {
+    height: 50px;
+    width: 50px;
+    background-image: cover;
+    border-radius: 50%;
+}
+
 .logo-container {
     display: flex;
     align-items: center;
@@ -13,10 +20,21 @@
 
 .company-name {
     margin-left: 10px;
+    font-family: 'Playball';
+    font-size: 32px;
+
 }
 
-.navbar a{
-  color: #626262;;
+.sub-title {
+    font-size: 16px;
+    font-family: 'Playball';
+    margin: 40px 0px 0px -44px
+}
+
+.navbar a {
+    color: #626262;
+
+
 }
 
 .horizontal-nav li a::before {

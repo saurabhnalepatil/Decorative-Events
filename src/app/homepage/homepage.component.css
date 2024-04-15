@@ -329,13 +329,4 @@
     }
 }
 
-.units {
-    width: max-content;
-    user-select: none;
-    -moz-user-select: none;
-    -webkit-user-select: none;
-    pointer-events: none;
-    padding: 0 10px;
-}
-
 
