@@ -18,3 +18,25 @@
 .navbar a{
   color: #626262;;
 }
+
+.horizontal-nav li a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: #77A28B;
+    transition: width 0.3s ease, left 0.3s ease;
+    transform: translateX(-50%);
+}
+
+.horizontal-nav li a:hover::before {
+    width: calc(100% + 40px);
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.horizontal-nav li a:hover {
+    color: #77A28B;
+}
