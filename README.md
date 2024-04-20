@@ -3,7 +3,8 @@
 # **Demo 🎥**
 ![work-1](https://github.com/saurabhnalepatil/Event_Decoration/assets/95145125/869f25ad-c786-4315-83bc-9cd8128708c3)
 
-# View live preview [here](https://event-decoration.vercel.app).
+# View live preview <a href="https://event-decoration.vercel.app" target="_blank">here</a>.
+
 # **Table of Contents 📜**
 - **[Sections](#section)**
 - **[Demo](#demo)**
