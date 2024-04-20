@@ -11,13 +11,12 @@
 - **[Getting Started](#getting-started)**
 - **[Packages Used](#packages-used)**
 # **Sections 🔖**
-- **HERO SECTION**
-- **ABOUT ME**
-- **EXPERIENCE**
-- **SKILLS**
+- **HOME**
+- **ABOUT US**
+- **SERVICE**
+- **PRODUCT**
 - **PROJECTS**
-- **EDUCATION**
-- **BLOG**
+- **GALLERY**
 - **CONTACTS**
 
 # **Installation ⬇️**
