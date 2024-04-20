@@ -1,5 +1,5 @@
 # **Developer Portfolio**
-## showcasing his expertise in Event Decoration. Explore a collection of stunning projects and experiences that demonstrate creativity and skill.
+## Showcasing his expertise in Event Decoration. Explore a collection of stunning projects and experiences that demonstrate creativity and skill.
 # **Demo 🎥**
 ![work-1](https://github.com/saurabhnalepatil/Event_Decoration/assets/95145125/869f25ad-c786-4315-83bc-9cd8128708c3)
 
