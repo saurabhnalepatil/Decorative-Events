@@ -1,27 +1,67 @@
-# BallonDeco
+# **Developer Portfolio**
+## showcasing his expertise in Event Decoration. Explore a collection of stunning projects and experiences that demonstrate creativity and skill.
+# **Demo 🎥**
+![work-1](https://github.com/saurabhnalepatil/Event_Decoration/assets/95145125/869f25ad-c786-4315-83bc-9cd8128708c3)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.0.
+# View live preview [here](https://portfoliosaurabhnale.vercel.app/).
+# **Table of Contents 📜**
+- **[Sections](#section)**
+- **[Demo](#demo)**
+- **[Installation](#installation)**
+- **[Getting Started](#getting-started)**
+- **[Packages Used](#packages-used)**
+# **Sections 🔖**
+- **HERO SECTION**
+- **ABOUT ME**
+- **EXPERIENCE**
+- **SKILLS**
+- **PROJECTS**
+- **EDUCATION**
+- **BLOG**
+- **CONTACTS**
 
-## Development server
+# **Installation ⬇️**
+## You will need to download Git and Node to run this project
+- **[Git](https://git-scm.com/downloads)**
+- **[Node](https://nodejs.org/en/download/)**
+## Make sure you have the latest version of both Git and Node on your computer.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+```bash
+node --version
+git --version
+```
+# **Getting Started 🎯**
+## Fork and Clone the repo
+To Fork the repo click on the fork button at the top right of the page. Once the repo is forked open your terminal and perform the following commands
+```bash
+git clone https://github.com/<YOUR GITHUB USERNAME>/portfolio.git
+cd portfolio
+```
+## Install packages from the root directory
+```bash
+npm install
+# or
+yarn install
+```
+Then, run the development server:
+```bash
+npm run dev
+# or
+yarn dev
+```
+Open http://localhost:4200 with your browser to see the result.
 
-## Code scaffolding
+devUsername Used for fetching blog from dev. to.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+# **Packages Used 📦**
 
-## Build
+Here is a list of packages used in this project:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+| Package             | Description             |
+|---------------------|-------------------------|
+| Angular             | Angular framework       |
+| @emailjs/browser    | Email sending library   |
+| font Awesome-icons         | Icon library     |
+| toaster     | Notification library    |
+| css                | CSS preprocessor        |
+| bootstrap         | CSS framework           |
